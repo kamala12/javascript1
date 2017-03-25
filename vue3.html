@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUEJS3</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="Vue">
+
+<input type="checkbox" id="Oliver" value="Oliver" v-model="checkedNames">
+<label for="Oliver">Oliver</label><br>
+<input type="checkbox" id="Marko" value="Marko" v-model="checkedNames">
+<label for="Marko">Marko</label><br>
+<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+<label for="mike">Mike</label><br>
+<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+<label for="jack">Jack</label><br>
+<input type="checkbox" id="john" value="Ron" v-model="checkedNames">
+<label for="john">Ron</label><br>
+<input type="checkbox" id="Mart" value="Mart" v-model="checkedNames">
+<label for="Mart">Mart</label><br>
+<input type="checkbox" id="Jakob" value="Jakob" v-model="checkedNames">
+<label for="Jakob">Jakob</label><br>
+<input type="checkbox" id="john" value="John" v-model="checkedNames">
+<label for="john">John</label><br>
+<input type="checkbox" id="Edgar" value="Edgar" v-model="checkedNames">
+<label for="Edgar">Edgar</label>
+<br><br><br><br>
+<span> {{ checkedNames }}</span>
+
+</div>
+
+<script>
+
+    var tekst = new Vue({
+
+        el: 'tekst',
+        data: {
+            checkedNames:
+        }
+    })
+
+</script>
+
+</body>
+</html>

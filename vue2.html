@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>VUEJS2</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="my-container">
+    <input type="text" v-model="firstName" @keyup.enter="onSubmit"/>
+    <button @click="onSubmit"><p>{{ firstName }}</p></button>
+</div>
+
+
+<script type="text/javascript">
+
+    new Vue({
+        el: '#my-container',
+        methods: {
+            onSubmit: function (evt) {
+               alert(this.firstName); //alerts whatever you put in the input box
+            }
+        },
+        data: {
+            firstName: ''
+        }
+    })
+
+
+
+</script>
+</body>
+</html>
